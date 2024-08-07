@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,34 +8,35 @@
         <script src="js.js"></script>
     </head>
     <body class="flex">
-        <aside class="flex_col wrap flex_grow_1">
-            <section>
+        <aside class="flex_col wrap j_sb">
+            <section class="flex_grow_1">
                 <h2>Carusel de imagenes web</h2>
-                <div class="form">
-                    <h2>Ingresar URL de la imagen para añadir</h2>
-                    <span
-                        >Formato soportados: JPEG, GIF, GIFs, PNG, APNG, SVG,
-                        BMP, BMP ICO, PNG ICO</span
-                    >
+                <div class="form flex_col">
+                    <h3>Ingresar URL de la imagen para añadir</h3>
                     <input type="text" placeholder="URL" />
-                    <h2>Titulo de la obra</h2>
+                    <span><strong>*Formatos soportados:</strong> JPEG, GIF, GIFs, PNG, APNG, SVG,
+                        BMP, BMP ICO, PNG ICO</span>
+                    <h3>Titulo de la obra</h3>
                     <input type="text" placeholder="El pedro con botas" />
-                    <p>Las imagenes se mostraran con su ancho original</p>
-                    <button>Añadir al carrusel</button>
+                    <button class="all_c">Añadir al carrusel</button>
                 </div>
             </section>
-            <section>
-                <div class="logo">
+            <section class="flex_col all_c selectDisable">
+                <div class="logo flex all_c">
                     <img
                         src="https://media1.tenor.com/m/NVwxxoyoyGgAAAAd/racoon-pedro.gif"
                         alt=""
                         srcset=""
+                        class="selectDisable"
                     />
-                    <h1>EL PEDRUSEL</h1>
+                    <h1 class="texto_gradiente">EL PEDRUSEL</h1>
                 </div>
             </section>
         </aside>
-        <main class="flex_col flex_grow_1">
+        <main class="flex_col all_c flex_grow_1">
+            <div class="left">
+                <img src="https://cdn-icons-png.flaticon.com/512/467/467274.png" alt="" srcset="">
+            </div>
             <div class="img_added">
                 <h3>Titulo x</h3>
                 <img
@@ -57,6 +58,9 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="right">
+                <img src="https://cdn-icons-png.flaticon.com/512/467/467282.png" alt="" srcset="">
             </div>
         </main>
     </body>
