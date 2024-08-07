@@ -48,7 +48,7 @@ Para un funcionamiento óptimo, especialmente si planeas hacer modificaciones o 
 ## Autoría ✒️
 * [Kevin González - KevinJGV](https://github.com/KevinJGV)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/KevinJGV/images_carrousel/graphs/contributors) quienes han participado en este proyecto.
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/KevinJGV/Work-Project-images_carrousel/graphs/contributors) quienes han participado en este proyecto.
 
 ## Despliegue 📦
-El proyecto está desplegado y se puede acceder en línea. Visita el [repositorio del proyecto](https://github.com/KevinJGV/images_carrousel) para más información y acceso al despliegue.
+El proyecto está desplegado y se puede acceder en línea. Visita el [repositorio del proyecto](https://github.com/KevinJGV/Work-Project-images_carrousel) para más información y acceso al despliegue.
