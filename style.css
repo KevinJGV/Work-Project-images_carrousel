@@ -81,6 +81,11 @@ html {
     -webkit-user-drag: none;
 }
 
+.no_display {
+    display: none;
+    visibility: hidden;
+}
+
 body {
     height: 98vh;
     gap: 5px;
@@ -185,6 +190,13 @@ main {
     overflow: hidden;
 }
 
+.advice {
+    opacity: 0.5;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
 .arrow_box {
     align-self: stretch;
     display: flex;
@@ -215,15 +227,36 @@ main {
 }
 
 .imgs {
-    z-index: 1;
+    position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .img_added {
+    position: absolute;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 100%;
+    transition: transform 0.5s ease-in-out;
 }
+
+.img_added.current {
+    left: 0;
+    transform: translateX(0);
+}
+
+.img_added.prev {
+    left: -100%;
+    transform: translateX(-100%);
+}
+
+.img_added.next {
+    left: 100%;
+    transform: translateX(100%);
+}
+
 
 .img_added h3 {
     z-index: 10;
@@ -247,6 +280,10 @@ main {
     padding: 100px 0 15px 0;
     color: var(--GRIS);
     background-image: linear-gradient(to top,var(--NEGRO_TRANSLUCIDO_FUERTE), var(--TRANSPARENTE));
+}
+
+a {
+    color: aqua;
 }
 
 .img_added_info button {
