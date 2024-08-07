@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>.: Pedrusel</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="js.js"></script>
+        <script defer src="js.js"></script>
     </head>
     <body class="flex">
         <aside class="flex_col wrap j_sb">
@@ -13,12 +13,12 @@
                 <h2>Carusel de imagenes web</h2>
                 <div class="form flex_col">
                     <h3>Ingresar URL de la imagen para añadir</h3>
-                    <input type="text" placeholder="URL" />
-                    <span><strong>*Formatos soportados:</strong> JPEG, GIF, GIFs, PNG, APNG, SVG,
-                        BMP, BMP ICO, PNG ICO</span>
+                    <input id="url" type="text" placeholder="URL" />
+                    <span><strong>*Formatos soportados: </strong>WEBP, AVIF, JPEG, GIF, GIFs, PNG, APNG, SVG,
+                        BMP, ICO, TIFF, XBM. (Y sus variaciones)</span>
                     <h3>Titulo de la obra</h3>
-                    <input type="text" placeholder="El pedro con botas" />
-                    <button class="all_c">Añadir al carrusel</button>
+                    <input id="title" type="text" placeholder="El pedro con botas" />
+                    <button id="add_button" class="all_c pos_rela">Añadir al carrusel</button>
                 </div>
             </section>
             <section class="flex_col all_c selectDisable">
@@ -39,7 +39,7 @@
                 <img class="selectDisable arrow " src="https://cdn-icons-png.flaticon.com/512/467/467274.png" alt="" srcset="" draggable="false">
             </div>
             <div class="imgs flex pos_abs">
-                <div class="img_added flex_col pos_rela">
+                <div class="img_added current flex_col pos_rela">
                     <div class="img_box pos_rela flex all_c">
                         <img
                         src="https://media1.tenor.com/m/NVwxxoyoyGgAAAAd/racoon-pedro.gif"

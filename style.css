@@ -124,17 +124,28 @@ input {
     font-size: 1.1rem;
 }
 
-aside button {
+#add_button {
     background-color: #019908;
-    border: 0;
+    border-color: #019908;
     border-radius: 3px;
     padding: 10px;
+    overflow: hidden;
 }
 
-aside button:active {
+#add_button:active {
     background-color: #005804;
     color: rgb(212, 212, 212);
     transform: scale(0.9);
+}
+
+#loader {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    mix-blend-mode: difference;
+    filter: invert(1);
 }
 
 .logo {
@@ -159,6 +170,7 @@ aside button:active {
     background-image: linear-gradient(to right, #ffbe00, rgb(39, 39, 39));
     background-size: cover;
     background-repeat: repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -238,7 +250,6 @@ main {
 }
 
 .img_added_info button {
-    visibility: hidden;
     color: white;
     background-color: #992501;
     border: 0;
@@ -261,11 +272,10 @@ button {
     cursor: pointer;
 }
 
-.img_added_info ul {
+.img_added_info ul, .img_added_info button {
     display: none;
 }
 
 .img_box:hover + .img_added_info ul, .img_added_info:hover ul, .img_added_info:hover button {
     display: unset;
-    visibility: visible;
 }
